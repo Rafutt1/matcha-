@@ -28,7 +28,10 @@ const PLANS = {
   },
 };
 
-const SITE_URL = "https://matcha.healthysuperfoods.mx";
+// URL del sitio: Netlify la inyecta automáticamente (process.env.URL).
+// Funciona igual en matchapremium.netlify.app y en el dominio propio
+// cuando lo agregues — sin tocar nada.
+const SITE_URL = process.env.URL || "https://matchapremium.netlify.app";
 
 export default async (req) => {
   if (req.method !== "POST") {
