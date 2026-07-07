@@ -50,6 +50,7 @@ export default async (req) => {
 
     // Payload en el MISMO formato que el script v2 de pedidos (creatina)
     const pedido = {
+      producto: "Matcha Orgánica Premium 500 g",
       fecha,
       referencia: pago.external_reference || "",
       pago_id: String(pago.id),
