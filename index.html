@@ -94,17 +94,18 @@ nav{
 }
 .hero-video{
   position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;z-index:0;opacity:.5;
+  object-fit:cover;z-index:0;opacity:.75;
 }
 .hero-velo{
   position:absolute;inset:0;z-index:1;pointer-events:none;
   background:
-    linear-gradient(180deg, rgba(11,16,12,.82) 0%, rgba(11,16,12,.55) 45%, var(--tinta) 100%),
-    radial-gradient(60% 50% at 78% 45%, rgba(44,82,55,.35) 0%, transparent 70%);
+    linear-gradient(180deg, rgba(11,16,12,.62) 0%, rgba(11,16,12,.32) 45%, var(--tinta) 100%),
+    radial-gradient(60% 50% at 78% 45%, rgba(44,82,55,.22) 0%, transparent 70%);
 }
 .hero-grid{position:relative;z-index:2}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;width:100%}
-.hero h1{font-size:clamp(2.6rem,5.5vw,4.4rem);color:var(--crema)}
+.hero h1{font-size:clamp(2.6rem,5.5vw,4.4rem);color:var(--crema);text-shadow:0 2px 20px rgba(0,0,0,.65)}
+.hero .lead,.hero-datos,.hero-nota{text-shadow:0 1px 12px rgba(0,0,0,.6)}
 .hero h1 .verde{color:var(--matcha)}
 .hero .lead{margin:1.4rem 0 2.2rem;max-width:32rem}
 .hero-datos{display:flex;gap:2.2rem;margin-bottom:2.4rem;flex-wrap:wrap}
